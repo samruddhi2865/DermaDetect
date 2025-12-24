@@ -1,0 +1,93 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 3vw;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.navbar-brand a {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  box-shadow: 0 0 0 2px #a7f3d0;
+}
+
+.navbar-brand span {
+  color: #0f172a;
+}
+
+.navbar-brand span .accent {
+  color: #14b8a6;
+}
+
+/* links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  font-size: 0.95rem;
+}
+
+.navbar-links a {
+  color: #4b5563;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 0.15rem;
+}
+
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #14b8a6, #22c55e);
+  transition: width 0.18s ease;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+/* small primary button style for auth links if needed */
+.navbar-links a:last-child {
+  padding-inline: 0;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding-inline: 1rem;
+  }
+
+  .navbar-links {
+    gap: 0.7rem;
+    font-size: 0.88rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}

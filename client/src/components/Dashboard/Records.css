@@ -1,0 +1,142 @@
+.records-shell {
+  max-width: 900px;
+  margin: 2.4rem auto;
+  padding: 0 1.2rem 2.4rem;
+}
+
+/* header */
+.records-header {
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.records-header h1 {
+  font-size: 1.9rem;
+  margin-bottom: 0.4rem;
+  color: #0f172a;
+}
+
+.records-header p {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #4b5563;
+  font-size: 0.94rem;
+}
+
+/* outer card kept slim */
+.records-list-card {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow:
+    0 10px 26px rgba(15, 23, 42, 0.06),
+    0 0 0 1px rgba(148, 163, 184, 0.2);
+  padding: 1.3rem 1.4rem 1.4rem;
+}
+
+/* empty state */
+.records-empty {
+  padding: 0.8rem 0.7rem;
+  border-radius: 10px;
+  background: #ecfdf5;
+  border: 1px dashed #6ee7b7;
+  color: #047857;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* list styles */
+.records-list {
+  list-style: none;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* each row is small + fixed height */
+.record-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.55rem 0.7rem;
+  border-radius: 10px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+/* left side: index + file name */
+.record-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0; /* allows text truncation */
+}
+
+.record-index {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #0f766e;
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  background: #ecfdf5;
+}
+
+.record-name {
+  font-size: 0.9rem;
+  color: #111827;
+  max-width: 500px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* compact button */
+.btn.primary {
+  border: none;
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  background: linear-gradient(135deg, #14b8a6, #22c55e);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.86rem;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(34, 197, 94, 0.35);
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease,
+    filter 0.15s ease;
+}
+
+.btn.primary:hover {
+  filter: brightness(1.04);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 22px rgba(34, 197, 94, 0.45);
+}
+
+.record-btn {
+  flex-shrink: 0;
+}
+
+/* responsive */
+@media (max-width: 720px) {
+  .records-list-card {
+    padding-inline: 1rem;
+  }
+
+  .record-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .record-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .record-name {
+    max-width: 100%;
+  }
+}

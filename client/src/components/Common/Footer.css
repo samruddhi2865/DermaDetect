@@ -1,0 +1,41 @@
+.footer {
+  padding: 1.2rem 1rem;
+  background: linear-gradient(90deg, #0f172a, #064e3b);
+  color: #e5e7eb;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  margin-top: 0.55rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.88rem;
+}
+
+.footer-links a {
+  color: #a7f3d0;
+  text-decoration: none;
+  position: relative;
+}
+
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background: #a7f3d0;
+  transition: width 0.18s ease;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}

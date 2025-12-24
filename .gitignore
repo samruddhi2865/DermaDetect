@@ -1,0 +1,44 @@
+# Node modules
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build output
+client/build/
+server/dist/
+
+# Env files
+*.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# IDE / editor
+.vscode/
+.idea/
+.DS_Store
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Uploads & reports (runtime)
+server/uploads/
+server/reports/
+
+# ML models (do NOT commit large model files)
+server/model/
+
+# Caches
+client/.cache/
+server/.cache/
+
+# Test coverage
+coverage/
+
+# Temp files
+*.tmp
+*.temp
