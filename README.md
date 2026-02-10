@@ -1,229 +1,236 @@
-🩺 DermaDetect – Skin Disease Detection System
+# 🩺 DermaDetect – Skin Disease Detection System
 
-DermaDetect is a web-based skin disease detection application built using the MERN stack and deep learning.
-The system predicts possible skin diseases from images uploaded or captured using a web camera, helping users get early insights through AI-powered analysis.
+DermaDetect is a full-stack web application that uses **deep learning and the MERN stack** to predict possible skin diseases from uploaded or camera-captured images. The system leverages a **fine-tuned ResNet50 CNN model** to provide AI-powered insights, focusing on **early awareness and educational support**.
 
-A fine-tuned ResNet50 deep learning model is used to perform accurate image-based skin disease classification.
+> ⚠️ **Disclaimer:** This application is developed for **educational and research purposes only** and is **not a substitute for professional medical advice**.
 
-🎯 Project Purpose
+---
 
-The goal of DermaDetect is to:
+## 🎯 Project Objectives
 
-Apply machine learning to a real-world healthcare problem
+* Apply **AI & Machine Learning** to a real-world healthcare use case
+* Build a complete **MERN stack** application
+* Integrate a **deep learning model** with a web backend
+* Provide a **simple, secure, and user-friendly interface** for predictions
 
-Learn full-stack development using the MERN stack
+---
 
-Integrate AI/ML models with a web application
+## ✨ Key Features
 
-Provide a simple and user-friendly interface for skin disease prediction
+### 🔐 Authentication & Security
 
-⚠️ This application is intended for educational and research purposes only and should not be used as a replacement for professional medical advice.
+* Secure user registration and login using **JWT authentication**
 
-✨ Key Features
+### 👤 User Profile Management
 
-🔐 User Authentication
+* View and manage user profile details
 
-Secure login and registration using JWT
+### 📸 Skin Disease Prediction
 
-👤 User Profile Management
+* Upload images or capture using a web camera
+* AI model predicts possible skin disease
 
-View and update user details
+### 📊 Dashboard
 
-📸 Skin Disease Prediction
+* Centralized access to all application features
 
-Upload an image or capture one using a web camera
+### 📄 Prediction History
 
-AI model predicts the possible skin disease
+* View past predictions
+* Download prediction reports in **PDF format**
 
-📊 Dashboard
+### 📝 Blog Management
 
-Central access to all application features
+* Create and manage skin-health-related blog posts
 
-📝 Blog Management
+### 📩 Contact Module
 
-Users can create and manage blog posts related to skin health
+* Submit queries or feedback through a contact form
 
-📩 Contact Form
+---
 
-Users can send queries or feedback
+## 🖼️ Screenshots
 
-📄 Prediction History
+*Add screenshots in the `/screenshots` folder*
 
-View past predictions
+* User Login Page
+* Dashboard
+* Skin Disease Prediction Page
+* Prediction History
+* Blog Management
+* Contact Us Page
 
-Download prediction reports in PDF format
+---
 
-🖼️ Screenshots
+## 🛠️ Technology Stack
 
-(Add screenshots inside a /screenshots folder and update paths below)
+### Frontend
 
-User Login Page
+* React.js
+* HTML5, CSS3
+* JavaScript
 
-Dashboard
+### Backend
 
-Skin Disease Prediction Page
+* Node.js
+* Express.js
 
-Prediction Records
+### Database
 
-Blog Creation Page
+* MongoDB
 
-Contact Us Page
+### Machine Learning
 
-🛠️ Technology Stack
-Frontend
+* Python
+* TensorFlow & Keras
+* ResNet50 (Fine-tuned CNN)
 
-React.js
+### Other Tools & Libraries
 
-HTML5
+* JWT (Authentication)
+* Multer (Image upload handling)
+* PDF generation libraries
+* RESTful APIs
 
-CSS3
+---
 
-JavaScript
+## 📂 Project Structure
 
-Backend
-
-Node.js
-
-Express.js
-
-Database
-
-MongoDB
-
-Machine Learning
-
-Python
-
-TensorFlow
-
-Keras
-
-ResNet50 (Fine-tuned CNN model)
-
-Other Tools & Libraries
-
-JWT (Authentication)
-
-Multer (Image upload handling)
-
-PDF generation libraries
-
-REST APIs
-
-📂 Project Structure
-DermaDetect
+```
+DermaDetect/
 │
-├── client/                 # React frontend
+├── client/               # React frontend
 │   ├── src/
 │   └── public/
 │
-├── server/                 # Node.js backend
+├── server/               # Node.js backend
 │   ├── routes/
 │   ├── controllers/
 │   ├── models/
 │   ├── middleware/
 │   └── server.js
 │
-├── ml-model/               # Machine learning model
+├── ml-model/             # Deep learning model
 │   ├── train.py
 │   └── predict.py
 │
 ├── screenshots/
 ├── README.md
 └── package.json
+```
 
-⚙️ Setup Instructions
-✅ Prerequisites
+---
 
-Ensure you have the following installed:
+## ⚙️ Setup & Installation
 
-Node.js
+### ✅ Prerequisites
 
-MongoDB
+Ensure you have installed:
 
-Python 3.x
+* Node.js
+* MongoDB
+* Python 3.x
+* TensorFlow & Keras
 
-TensorFlow & Keras
+---
 
-🚀 Installation Steps
-1️⃣ Clone the Repository
+### 🚀 Installation Steps
+
+#### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/samruddhi2865/DermaDetect.git
+```
 
-2️⃣ Navigate to the Project Directory
+#### 2️⃣ Navigate to Project Directory
+
+```bash
 cd DermaDetect
+```
 
-3️⃣ Install Backend Dependencies
+#### 3️⃣ Install Backend Dependencies
+
+```bash
 cd server
 npm install
+```
 
-4️⃣ Install Frontend Dependencies
+#### 4️⃣ Install Frontend Dependencies
+
+```bash
 cd ../client
 npm install
+```
 
-5️⃣ Configure Environment Variables
+#### 5️⃣ Configure Environment Variables
 
-Create a .env file inside the server folder and add:
+Create a `.env` file inside the `server` folder:
 
+```env
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
+```
 
-▶️ Run the Application
-Start Backend Server
+---
+
+### ▶️ Run the Application
+
+#### Start Backend Server
+
+```bash
 cd server
 node server.js
+```
 
-Start Frontend Server
+#### Start Frontend Server
+
+```bash
 cd ../client
 npm start
+```
 
-Access the Application
-http://localhost:3000
+🌐 Access the app at:
+`http://localhost:3000`
 
-🧪 How It Works
+---
 
-User logs in or registers
+## 🧪 How the System Works
 
-Image is uploaded or captured via camera
+1. User registers or logs in
+2. Image is uploaded or captured
+3. Image is sent to the backend
+4. Deep learning model processes the image
+5. Prediction result is returned
+6. Result is saved and available for PDF download
 
-Image is sent to the backend
+---
 
-ML model processes the image
+## 📘 Learning Outcomes
 
-Prediction result is returned to the frontend
+* MERN stack development
+* REST API design
+* JWT-based authentication
+* Image handling in web applications
+* Deep learning model integration
+* Full-stack AI system deployment
 
-Result is saved and can be downloaded as PDF
+---
 
-📘 Learning Outcomes
+## 🔮 Future Enhancements
 
-Through this project, I learned:
+* 🤖 AI chatbot for skin-care guidance
+* 🌿 Natural remedy recommendations
+* 🏥 Doctor consultation suggestions
+* 📱 Mobile application version
+* 🧠 Improved model accuracy with larger datasets
 
-MERN stack development
+---
 
-REST API integration
+## 👩‍💻 Author
 
-JWT-based authentication
+**Samruddhi Kshirsagar**
+📧 Email: [samrudhikshirsagar65@gmail.com](mailto:samrudhikshirsagar65@gmail.com)
+🔗 GitHub: [https://github.com/samruddhi2865](https://github.com/samruddhi2865)
 
-Image handling in web apps
 
-Deep learning model deployment
-
-Full-stack AI application design
-
-🔮 Future Enhancements
-
-🤖 AI chatbot for skin care guidance
-
-🌿 Natural remedy recommendations
-
-🏥 Doctor consultation suggestions
-
-📱 Mobile app version
-
-🧠 Improved model accuracy with larger datasets
-
-👩‍💻 Author
-
-Samruddhi Kshirsagar
-📧 Email: samrudhikshirsagar65@gmail.com
-
-🔗 GitHub: https://github.com/samruddhi2865
+Just tell me 👍
