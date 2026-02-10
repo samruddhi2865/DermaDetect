@@ -2,10 +2,6 @@
 
 DermaDetect is a full-stack web application that uses **deep learning and the MERN stack** to predict possible skin diseases from uploaded or camera-captured images. The system leverages a **fine-tuned ResNet50 CNN model** to provide AI-powered insights, focusing on **early awareness and educational support**.
 
-> ⚠️ **Disclaimer:** This application is developed for **educational and research purposes only** and is **not a substitute for professional medical advice**.
-
----
-
 ## 🎯 Project Objectives
 
 * Apply **AI & Machine Learning** to a real-world healthcare use case
@@ -231,6 +227,3 @@ npm start
 **Samruddhi Kshirsagar**
 📧 Email: [samrudhikshirsagar65@gmail.com](mailto:samrudhikshirsagar65@gmail.com)
 🔗 GitHub: [https://github.com/samruddhi2865](https://github.com/samruddhi2865)
-
-
-Just tell me 👍
